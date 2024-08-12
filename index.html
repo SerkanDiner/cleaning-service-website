@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean UP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="/images/logo.png">
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+    
+<div class="container">
+    <div class="card">
+        <img src="/images/cleaner_1.jpeg" alt="Avatar" class="card-img">
+        <div class="card-content">
+            <h2 class="card-name">Serkan</h2>
+            <h3 class="card-surname">Diner</h3>
+            <p class="card-description">Computer scinece student at University of Birkbeck.</p>
+            <button class="show-more" onclick="openModal()">Show More</button>
+        </div>
+    </div>
+
+   
+    <div class="card">
+        <img src="/images/cleaner_1.jpeg" alt="Avatar" class="card-img">
+        <div class="card-content">
+            <h2 class="card-name">Serkan</h2>
+            <h3 class="card-surname">Diner</h3>
+            <p class="card-description">Computer scinece student at University of Birkbeck.</p>
+            <button class="show-more" onclick="openModal()">Show More</button>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img src="/images/cleaner_1.jpeg" alt="Avatar" class="card-img">
+        <div class="card-content">
+            <h2 class="card-name">Serkan</h2>
+            <h3 class="card-surname">Diner</h3>
+            <p class="card-description">Computer scinece student at University of Birkbeck.</p>
+            <button class="show-more" onclick="openModal()">Show More</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/cleaner_1.jpeg" alt="Avatar" class="card-img">
+        <div class="card-content">
+            <h2 class="card-name">Serkan</h2>
+            <h3 class="card-surname">Diner</h3>
+            <p class="card-description">Computer scinece student at University of Birkbeck.</p>
+            <button class="show-more" onclick="openModal()">Show More</button>
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="/images/cleaner_1.jpeg" alt="Avatar" class="card-img">
+        <div class="card-content">
+            <h2 class="card-name">Serkan</h2>
+            <h3 class="card-surname">Diner</h3>
+            <p class="card-description">Computer scinece student at University of Birkbeck.</p>
+            <button class="show-more" onclick="openModal()">Show More</button>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+    <!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>More About Serkan Diner</h2>
+        <p>Serkan Diner is from Turkey and curently studys Computer Science in London.He is creating a Cleaning service website for his Final Project.
+             The nain idea of this project is that finding a cleaner way easy in London and give him a opporunity improve his skills   </p>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    // Close the modal when clicking outside of it
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("myModal")) {
+            closeModal();
+        }
+    }
+</script>
+
+
+</body>
+</html>
